@@ -1,23 +1,77 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Sajjad Beygi's homepage</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
 </head>
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Main</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-category">Research</div>
-<div class="menu-item"><a href="index.html#Publications">Publications</a></div>
-</td>
-<td id="layout-content">
-<table class="imgtable">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Home</a></p>
+      <p><a href="#">Research</a></p>
+      <p><a href="https://scholar.google.com/citations?hl=en&user=_ZSfAa4AAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a></p>
+      <p><a href="#">Publications</a></p>
+      <p><a href="#">Notes</a></p>
+      <p><a href="#">Useful links</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      
+      <table class="imgtable">
 <tr>
 <td>
 <a href="http://www-scf.usc.edu/~beygihar/"><img src="image.jpg" alt="" width="200px" height="225px" /></a>&nbsp;</td>
@@ -25,50 +79,34 @@
 </h1>
 <p>
 <br/>
-Ph.D. Student <a href="http://www.ee.usc.edu/"> Electrical Engineering Department</a> <br />
+<b>E-mail:</b> beygihar[@]gmail[dot]com<br />
 
-<a href="http://www.usc.edu/">University of Southern California</a> <br />
-
-<b>E-mail:</b> beygihar[at]usc[dot]edu<br />
-
-<b> Address:</b> <a href="https://www.google.com/maps/place/3740+McClintock+Ave,+University+of+Southern+California,+Los+Angeles,+CA+90089/@34.0197278,-118.2901168,17z/data=!4m7!1m4!3m3!1s0x80c2c7fc82ea93e5:0xdf2fc63576212881!2s3740+McClintock+Ave,+University+of+Southern+California,+Los+Angeles,+CA+90089!3b1!3m1!1s0x80c2c7fc82ea93e5:0xdf2fc63576212881"> Map </a><br />
-<b>Phone:</b>  +1(213)740-4685
 
 </p>
 </td></tr></table>
 <p>
-  I am currently a PhD student in the <a href="http://ee.usc.edu/"> Electrical Engineering Department</a> at
-  the <a href="http://ee.usc.edu/">University of Southern California (USC)</a>.
-  I received my B.Sc. and M.Sc. degrees in Electrical Engineering from <a href="http://aut.ac.ir/www/aut/main/">
-  Amirkabir University of Technology (AUT)</a> and <a href="http://www.sharif.ir/web/en/">Sharif University of Technology (SUT)</a>,
-  Tehran, Iran, in 2008 and 2010, respectively. Since August 2012, I have worked toward the Ph.D. degree in the Department of Electrical Engineering at USC.
-<br><br>
-  My current research interests broadly lie in <i>machine learning</i>/data mining, <i>statistical learning</i>, and their applications in big data analysis.
-  In particular I am interested in the development of methods for challenging problems in estimation/approximation of structured signals in wireless communications systems. 
-  I am delighted to have <a href="http://csi.usc.edu/~ubli/ubli.html">Prof. Urbashi Mitra</a> as my advisor. As part of my research I have furthermore collaborated with <a href="http://www.chalmers.se/en/staff/Pages/erik-strom.aspx">Prof. Erik G. Ström</a>.<br>
   
-Here is a link to my <a href="http://www-scf.usc.edu/~beygihar/Sajjad Beygi_CV.pdf">CV</a>.
+  I am Sajjad Beygi. I got my PhD from <a href="http://ee.usc.edu/"> Electrical Engineering Department</a> at
+  the <a href="http://ee.usc.edu/">University of Southern California (USC)</a>. My research focuses are in learning <i>dynamic and static predictive models</i>, structure and non-structure <i>data mining and modeling</i>. <br><br>
+  
+  In general I am interested in <i>machine learning</i> and <i>statsical signal processing</i>. This is an amazing field with so many applications to large-scale data and so much still to develop in terms of practical and theoretically-backed statistical techniques. I previously worked on time-varying high dimensional structured signal learning such as video/image and wireless communication signals. 
+Here is a link to my <a href="https://sajjadbeygi.github.io/Sajjad Beygi_CV.pdf">CV</a>.
 <br>
-
-
 </p>
-<p><div id="Publications">
-</p>
+
+<p><div id="Publications"></p>
 <h2>Publications
 
-<h3>Journal Papers 
-</h3>
-<ol> <p> </li>
-
+<h3>Journal Papers </h3>
+<ol> 
+<li><p>S. Beygi, S. Jalali, A. Maleki, U. Mitra, "<i>An efficient algorithm for compression-based compressed sensing</i> submitted to the Journal of Information and Inference,  arXiv preprint [<a href="https://arxiv.org/abs/1704.01992">PDF</a>]
+	<br /><br />
 <li><p>S. Beygi, U. Mitra, and E.G. Strom, ''<i>Nested Sparse Approximation: Structured Estimation of V2V 
-Channels Using Geometry-Based Stochastic Channel Model,"</i> 
-Accepted for publication in IEEE Transactions on Signal Processing, June, 2015. 
+Channels Using Geometry-Based Stochastic Channel Model,"</i> IEEE Transactions on Signal Processing, Vol. 63, No. 18, pages 4940-4955, Sept., 2015.
 [<a href="http://arxiv.org/abs/1412.2999">PDF</a>]<br /><br />
-</p>
-</li>      
+</p></li>      
            
-<li><p>S. Beygi, U. Mitra, ‘‘<i>Multi-Scale Multi-Lag Channel Estimation Via Low Rank and Sparse Approximations for OFDM</i>,"
-Accepted for publication in IEEE Transactions on Signal Processing, June, 2015. 
+<li><p>S. Beygi, U. Mitra, ‘‘<i>Multi-Scale Multi-Lag Channel Estimation Via Low Rank and Sparse Approximations for OFDM</i>,"IEEE Transactions on Signal Processing, Vol. 63, No. 18, pages 4744-4755, Sept., 2015. 
 [<a href="http://www-scf.usc.edu/~beygihar/MSML_paper.pdf">PDF</a>]<br /> <br />
 
 <li><p>S. Beygi and U. Mitra,‘‘<i>Optimal Bayesian Resampling for OFDM Signaling Over Multi-scale Multi-lag Channels</i>," 
@@ -95,19 +133,23 @@ digital images using quantized discrete cosine transform coefficients</i>," Jour
 EURASIP Journal on Advances in Signal Processing, vol. 2011, no. 109, pages 1687-6180, 2011. 
 [<a href="http://asp.eurasipjournals.com/content/2011/1/109">PDF</a>] 
 <br /><br />
-
 </p>
 </li>
 </ol>
-<h3>Selected Peer Reviewed Conference Proceedings
-</h3>
+
+<h3>Selected Peer Reviewed Conference Proceedings</h3>
 <ol>
 
-<!--
-<li><p>S. Choudhary, S. Beygi, and U. Mitra, ''<i>Delay-Doppler Estimation via Structured Low-Rank Matrix Recovery</i>,"
-submitted to IEEE Conference and Exhibition of Global Telecommunications (GLOBECOM), San Diego, USA, 2015.<br /><br />
-</p>
-</li> -->
+<li><p>S. Beygi, S. Jalali, A. Maleki, U. Mitra, "<i>Compressed sensing of compressible signals</i>,"
+ IEEE International Symposium on Information Theory (ISIT), pages 2158-2162, Aachen, Germany, June 25-30, 2017. 
+ <br /><br />
+
+<li><p> S. Beygi, and U. Mitra, ``<i>Structured estimation of time-varying narrowband wireless communication channels</i>," IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pages 3529-3533, New Orleans, USA, May 2017.
+ <br /><br />
+
+<li><p>S. Choudhary, S. Beygi, and U. Mitra, ''<i>Delay-Doppler Estimation via Structured Low-Rank Matrix Recovery</i>," IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pages 3786-3790, Shanghai, China, June 2016.
+<br /><br />
+
 
 <li><p>S. Beygi, U. Mitra, and M.R. Petraglia, ''<i>Multi-scale Multi-lag Channel Estimation via Linearization of Training Signal Spectrum and Sparse Approximation</i>,"
 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Brisbane, Australia, pages , April 19-24, 2015. 
@@ -146,48 +188,18 @@ ACM International Conference on Underwater Networks and Systems (WUWNet), Los An
 </ol>
 <p></div>
 
-<!--
-</p>
-<p><div id="Talks">
-</p>
-<h2>Talks 
-</h2>
-<ol>
-<li><p>Auctions with Dynamic Costly Information Acquisition,<br /> INFORMS Annual Meeting, San Francisco, California, November 2014.<br /><br />
-
-
-</p>
-<li><p>Dynamic Mechanisms with Costly Information Acquisition,<br /> INFORMS Annual Meeting, Minneapolis, Minnesota, October 2013.<br /><br />
-
-
-</p>
-</li>
-<li><p>Real-time Optimization of Personalized Assortments,<br /> ACM Conference on Electronic Commerce (EC), Philadelphia, Pennsylvania, June 2013.<br /><br />
-
-
-</p>
-</li>
-<li><p>FemtoCaching: Wireless Video Content Delivery through Distributed Caching Helpers,
-
-<br /> International Conference on Computer Communications (INFOCOM), Orlando,
-
-Florida, March 2012.
-</p>
-</li>
-</ol>
-<p></div>
--->
-
-
-
-</p>
-<div id="footer">
-<div id="footer-text">
-Page generated 2015-06-20 17:03:56 Pacific Summer Time, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+      <hr>
+    </div>
+    <div class="col-sm-2 sidenav">
+      
+    </div>
 </div>
 </div>
-</td>
-</tr>
-</table>
+<div>
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+</div>
+
 </body>
 </html>
